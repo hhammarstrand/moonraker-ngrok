@@ -6,7 +6,7 @@
 # Activate the authentication token from ngrok
 /home/pi/moonraker-ngrok/ngrok/ngrok authtoken $ngrok_auth
 
-# Sleep so that that the token is loaded
+# A little delay so that the token is loaded
 Sleep 2
 
 # Start Ngrok with configured parameters
