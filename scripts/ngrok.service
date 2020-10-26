@@ -1,0 +1,14 @@
+[Unit]
+Description=ngrok tunnel service for Moonraker
+After=network.target
+
+[Service]
+ExecStart=sh /home/pi/moonraker-ngrok/scripts/moonraker_ngrok.sh
+WorkingDirectory=/home/pi/moonraker-ngrok/
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+User=pi
+
+[Install]
+WantedBy=multi-user.target
