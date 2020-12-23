@@ -1,6 +1,6 @@
 # moonraker-ngrok
 
-Want to access [Mainsail](https://github.com/meteyou/mainsail) from outside of your network?
+Want to access [Mainsail](https://github.com/meteyou/mainsail) or [Fluidd](https://github.com/cadriel/fluidd) from outside of your network?
 
 This plugin for [Moonraker](https://github.com/Arksine/moonraker) helps you do that using [ngrok](https://ngrok.com/)
 
@@ -10,8 +10,11 @@ ssh into your pi (built in to terminal in most linux flavors and MacOS, if you a
 Example ssh for [MainsailOS:](https://github.com/raymondh2/MainsailOS) 
 ```
 ssh pi@mainsailos.local
-````
-
+```
+Example ssh for [FluiddPI:](https://github.com/cadriel/FluiddPI)
+```
+ssh pi@fluiddpi.local
+```
 Default password: `raspberry`
 
 
@@ -25,14 +28,14 @@ sh ./scripts/install.sh
 ```
 
 ## Configuration
-The easiest way is to use the web gui and edit the file `moonraker_ngrok_config.sh` that is located in the config folder of [Mainsail](https://github.com/meteyou/mainsail)
+The easiest way is to use the web gui and edit the file `moonraker_ngrok_config.sh` that is located in the config folder of [Mainsail](https://github.com/meteyou/mainsail)/[Fluidd](https://github.com/cadriel/fluidd)
 
 #### There is a few settings that you can change:
 
 Setting | Description
 ------------ | -------------
 ngrok_auth | **Needed!** [You can find yours at this link](https://dashboard.ngrok.com/auth/your-authtoken)
-Port | If you are using [MainsailOS](https://github.com/raymondh2/MainsailOS) you shouldn't need to change port. 
+Port | If you are using [MainsailOS](https://github.com/raymondh2/MainsailOS)/[FluiddPI:](https://github.com/cadriel/FluiddPI) you shouldn't need to change port. 
 ngrok_hostname | Hostname is only changeable if you have a paid account
 ngrok_username |This is **not** your ngrok login details. These are the credentials you would like to use to login in to Mainsail remotely
 ngrok_password | This is **not** your ngrok login details. These are the credentials you would like to use to login in to Mainsail remotely
